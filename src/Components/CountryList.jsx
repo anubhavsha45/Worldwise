@@ -1,9 +1,10 @@
-import PropTypes from "prop-types";
 import CountryItem from "./CountryItem";
 import styles from "./CountryList.module.css";
 import Spinner from "./Spinner";
 import Message from "./Message";
-function CountryList({ city, isloading }) {
+import { useCities } from "../Context/CitiesContext";
+function CountryList() {
+  const { city, isloading } = useCities();
   console.log(city);
   if (isloading) return <Spinner />;
   if (!city.length)

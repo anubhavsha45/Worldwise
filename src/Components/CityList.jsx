@@ -3,7 +3,9 @@ import CityItem from "./CityItem";
 import styles from "./CityList.module.css";
 import Spinner from "./Spinner";
 import Message from "./Message";
-function CityList({ city, isloading }) {
+import { useCities } from "../Context/CitiesContext";
+function CityList() {
+  const { city, isloading } = useCities();
   if (isloading) return <Spinner />;
   if (!city.length)
     return <Message message="Add your first city with thehelp of the map" />;
