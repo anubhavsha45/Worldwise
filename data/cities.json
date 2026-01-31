@@ -11,6 +11,42 @@
         "lng": -9.140900099907554
       },
       "id": 73930385
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2026-01-30T20:42:37.152Z",
+      "notes": "av",
+      "position": {
+        "lat": "40.003053858074665",
+        "lng": "0.00048043186377189084"
+      },
+      "id": 73930386
+    },
+    {
+      "cityName": "Meerut",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2026-01-30T20:43:39.370Z",
+      "notes": "india",
+      "position": {
+        "lat": "28.937275383366906",
+        "lng": "77.73834388947124"
+      },
+      "id": 73930387
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2026-01-31T12:00:02.696Z",
+      "notes": "dskljckaj",
+      "position": {
+        "lat": "40.01041267179664",
+        "lng": "-0.029375106972753254"
+      },
+      "id": 73930388
     }
   ]
 }
