@@ -4,7 +4,7 @@
       "cityName": "Lisbon",
       "country": "Portugal",
       "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
+      "date": "2025-10-31T15:59:59.138Z",
       "notes": "My favorite city so far!",
       "position": {
         "lat": 38.727881642324164,
@@ -27,7 +27,7 @@
     {
       "cityName": "Meerut",
       "country": "India",
-      "emoji": "🇮🇳",
+      "emoji": "",
       "date": "2026-01-30T20:43:39.370Z",
       "notes": "india",
       "position": {
@@ -47,6 +47,42 @@
         "lng": "-0.029375106972753254"
       },
       "id": 73930388
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2026-02-07T18:01:50.827Z",
+      "notes": "jkb",
+      "position": {
+        "lat": "40.02604751701328",
+        "lng": "-0.046018711956346"
+      },
+      "id": 73930389
+    },
+    {
+      "cityName": "Borriol",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2026-02-07T18:08:12.392Z",
+      "notes": "lk",
+      "position": {
+        "lat": "40.0423354771033",
+        "lng": "-0.0925178557764439"
+      },
+      "id": 73930390
+    },
+    {
+      "cityName": "San Juan de Moro",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2026-02-07T18:26:58.158Z",
+      "notes": "cahcba",
+      "position": {
+        "lat": "40.061000272347655",
+        "lng": "-0.10007858276367189"
+      },
+      "id": 73930391
     }
   ]
 }
