@@ -1,5 +1,5 @@
 import { createContext, useEffect, useContext, useReducer } from "react";
-const URL = "http://localhost:9000";
+const URL = "https://worldwise-backend-r29b.onrender.com";
 const CitiesContext = createContext();
 const initialstate = {
   city: [],
