@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import styles from "./Form.module.css";
-import Button from "./button";
+import Button from "./Button";
 import BackButton from "./BackButton";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 import Message from "./Message";
