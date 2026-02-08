@@ -36,6 +36,7 @@
     width: 100%;
     height: auto;
     padding: 1.8rem;
+    overflow-y: auto;
   }
 
   .copyright {

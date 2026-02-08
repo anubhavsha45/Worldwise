@@ -1,4 +1,4 @@
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   MapContainer,
   TileLayer,
@@ -18,6 +18,7 @@ function Map() {
   const { city } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const [maplat, maplng] = useUrlPosition();
+
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
@@ -29,14 +30,13 @@ function Map() {
       setMapPosition([Number(maplat), Number(maplng)]);
     }
   }, [maplat, maplng]);
-  useEffect(
-    function () {
-      if (geolocationPosition) {
-        setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
-      }
-    },
-    [geolocationPosition],
-  );
+
+  useEffect(() => {
+    if (geolocationPosition) {
+      setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
+    }
+  }, [geolocationPosition]);
+
   return (
     <div className={styles.mapContainer}>
       <Button type="position" onClick={getPosition}>
@@ -61,6 +61,7 @@ function Map() {
             </Popup>
           </Marker>
         ))}
+
         {geolocationPosition && (
           <Marker position={[geolocationPosition.lat, geolocationPosition.lng]}>
             <Popup>You are here 📍</Popup>
@@ -73,16 +74,23 @@ function Map() {
     </div>
   );
 }
-
 function ChangeCenter({ position }) {
   const map = useMap();
 
   useEffect(() => {
     map.setView(position);
+
+    // delay until layout fully settles
+    const timer = setTimeout(() => {
+      map.invalidateSize();
+    }, 400);
+
+    return () => clearTimeout(timer);
   }, [map, position]);
 
   return null;
 }
+
 function DetectClick() {
   const navigate = useNavigate();
 

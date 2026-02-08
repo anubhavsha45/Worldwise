@@ -3,6 +3,10 @@
   padding: 2.5rem 5rem;
   background-color: var(--color-dark--1);
   min-height: calc(100vh - 5rem);
+
+  /* better centering */
+  display: flex;
+  flex-direction: column;
 }
 
 .form {
@@ -16,7 +20,7 @@
   /* Centered form */
   width: 48rem;
   max-width: 100%;
-  margin: 8rem auto;
+  margin: auto;
 }
 
 .row {
@@ -35,7 +39,6 @@
   }
 
   .form {
-    margin: 6rem auto;
     padding: 2rem;
   }
 }
@@ -45,12 +48,11 @@
   .login {
     margin: 1rem;
     padding: 1.5rem;
-    min-height: auto;
+    min-height: calc(100vh - 2rem);
   }
 
   .form {
     width: 100%;
-    margin: 4rem auto;
     padding: 1.5rem;
     gap: 1.5rem;
   }
