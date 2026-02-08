@@ -32,3 +32,46 @@
 .product section a {
   margin-top: 2rem;
 }
+
+/* ---------- RESPONSIVE PART ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .product {
+    margin: 2rem;
+    padding: 2rem 3rem;
+  }
+
+  .product section {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .product h2 {
+    font-size: 3.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .product {
+    margin: 1rem;
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .product section {
+    margin: 3rem auto;
+    gap: 3rem;
+  }
+
+  .product h2 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .product p {
+    font-size: 1.4rem;
+  }
+}

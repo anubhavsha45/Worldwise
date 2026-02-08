@@ -30,3 +30,48 @@
   color: var(--color-light--1);
   margin-bottom: 2.5rem;
 }
+
+/* ---------- RESPONSIVE PART ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .homepage {
+    margin: 2rem;
+    padding: 2rem 3rem;
+  }
+
+  .homepage h1 {
+    font-size: 3.6rem;
+  }
+
+  .homepage h2 {
+    font-size: 1.7rem;
+    width: 95%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .homepage {
+    height: auto;
+    min-height: calc(100vh - 3rem);
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .homepage section {
+    height: auto;
+    gap: 2rem;
+  }
+
+  .homepage h1 {
+    font-size: 2.8rem;
+    line-height: 1.25;
+  }
+
+  .homepage h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

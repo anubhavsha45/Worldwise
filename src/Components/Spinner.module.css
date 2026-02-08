@@ -19,3 +19,21 @@
     transform: rotate(1turn);
   }
 }
+
+/* ---------- RESPONSIVE PART ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .spinner {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .spinner {
+    width: 4rem;
+    height: 4rem;
+  }
+}

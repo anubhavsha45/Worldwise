@@ -3,13 +3,17 @@
   margin-bottom: 2rem;
 }
 
+/* NAV CONTAINER */
 .nav ul {
   list-style: none;
   display: flex;
   background-color: var(--color-dark--2);
   border-radius: 7px;
+  flex-wrap: wrap; /* prevents overflow */
+  justify-content: center;
 }
 
+/* LINKS */
 .nav a:link,
 .nav a:visited {
   display: block;
@@ -20,9 +24,40 @@
   font-weight: 700;
   padding: 0.5rem 2rem;
   border-radius: 5px;
+  white-space: nowrap;
 }
 
-/* CSS Modules feature */
+/* Active link */
 .nav a:global(.active) {
   background-color: var(--color-dark--0);
+}
+
+/* ---------- RESPONSIVE PART ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .nav {
+    margin-top: 2rem;
+  }
+
+  .nav a:link,
+  .nav a:visited {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav a:link,
+  .nav a:visited {
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
 }

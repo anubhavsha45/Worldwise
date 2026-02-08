@@ -76,3 +76,50 @@ input:focus {
     "description": "Import CSS Module as `styles`"
   },
 */
+/* ---------- GLOBAL RESPONSIVE IMPROVEMENTS ---------- */
+
+/* Tablet scaling */
+@media (max-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+
+  label {
+    font-size: 1.4rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1.4rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .cta:link,
+  .cta:visited {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+/* Mobile scaling */
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+
+  label {
+    font-size: 1.3rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1.3rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .cta:link,
+  .cta:visited {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.6rem;
+  }
+}

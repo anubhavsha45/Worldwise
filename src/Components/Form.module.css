@@ -18,6 +18,7 @@
 .buttons {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .flag {
@@ -41,4 +42,44 @@
 :global(.react-datepicker) {
   font-family: inherit;
   font-size: 1.2rem;
+}
+
+/* ---------- RESPONSIVE PART ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .form {
+    padding: 1.8rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .flag {
+    font-size: 2.3rem;
+    top: 2.4rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .form {
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+  .flag {
+    font-size: 2rem;
+    top: 2.2rem;
+  }
+
+  :global(.react-datepicker) {
+    font-size: 1rem;
+  }
 }

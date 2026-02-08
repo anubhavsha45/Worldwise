@@ -9,13 +9,13 @@
   background-color: var(--color-dark--2);
   border-radius: 7px;
   padding: 2rem 3rem;
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
-  /* Different from other form */
+  /* Centered form */
   width: 48rem;
+  max-width: 100%;
   margin: 8rem auto;
 }
 
@@ -23,4 +23,35 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+/* ---------- RESPONSIVE PART ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .login {
+    margin: 2rem;
+    padding: 2rem 3rem;
+  }
+
+  .form {
+    margin: 6rem auto;
+    padding: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .login {
+    margin: 1rem;
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .form {
+    width: 100%;
+    margin: 4rem auto;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
 }

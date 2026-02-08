@@ -9,18 +9,21 @@
   cursor: pointer;
 }
 
+/* Primary */
 .primary {
   font-weight: 700;
   background-color: var(--color-brand--2);
   color: var(--color-dark--1);
 }
 
+/* Back */
 .back {
   font-weight: 600;
   background: none;
   border: 1px solid currentColor;
 }
 
+/* Floating position button */
 .position {
   font-weight: 700;
   position: absolute;
@@ -32,4 +35,35 @@
   background-color: var(--color-brand--2);
   color: var(--color-dark--1);
   box-shadow: 0 0.4rem 1.2rem rgba(36, 42, 46, 0.16);
+}
+
+/* ---------- RESPONSIVE PART ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .position {
+    font-size: 1.2rem;
+    bottom: 3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .btn {
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .position {
+    font-size: 1.1rem;
+    bottom: 2rem;
+    width: 90%;
+    max-width: 320px;
+    text-align: center;
+  }
 }

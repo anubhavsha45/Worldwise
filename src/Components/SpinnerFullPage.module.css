@@ -3,3 +3,19 @@
   height: calc(100vh - 5rem);
   background-color: var(--color-dark--1);
 }
+
+/* Tablet */
+@media (max-width: 768px) {
+  .spinnerFullpage {
+    margin: 2rem;
+    height: calc(100vh - 4rem);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .spinnerFullpage {
+    margin: 1rem;
+    height: calc(100vh - 2rem);
+  }
+}

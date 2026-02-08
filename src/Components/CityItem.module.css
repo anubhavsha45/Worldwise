@@ -53,3 +53,50 @@
   background-color: var(--color-brand--1);
   color: var(--color-dark--1);
 }
+
+/* ---------- RESPONSIVE PART ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .cityItem {
+    padding: 0.9rem 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .date {
+    font-size: 1.3rem;
+  }
+
+  .emoji {
+    font-size: 1.7rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .cityItem {
+    padding: 0.8rem 1.2rem;
+    gap: 1rem;
+  }
+
+  .emoji {
+    font-size: 1.5rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .date {
+    font-size: 1.2rem;
+  }
+
+  .deleteBtn {
+    height: 1.8rem;
+    font-size: 1.3rem;
+  }
+}

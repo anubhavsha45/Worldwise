@@ -17,3 +17,30 @@
   font-size: 3rem;
   line-height: 1;
 }
+
+/* ---------- RESPONSIVE PART ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .countryItem {
+    font-size: 1.5rem;
+    padding: 0.9rem 1.5rem;
+  }
+
+  .countryItem span:first-child {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .countryItem {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.2rem;
+    gap: 0.1rem;
+  }
+
+  .countryItem span:first-child {
+    font-size: 2.2rem;
+  }
+}

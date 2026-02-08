@@ -4,4 +4,26 @@
   overscroll-behavior-y: none;
   display: flex;
   position: relative;
+  gap: 2rem;
+}
+
+/* ---------- RESPONSIVE LAYOUT ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .app {
+    padding: 1.6rem;
+    gap: 1.6rem;
+  }
+}
+
+/* Mobile layout switch */
+@media (max-width: 480px) {
+  .app {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    padding: 1rem;
+    gap: 1rem;
+  }
 }
